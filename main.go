@@ -67,6 +67,6 @@ func verifyWebhook(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/webhook", verifyWebhook)
-	log.Println("Starting server on port 8080...")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Println("Starting server on port 8088...")
+	log.Fatal(http.ListenAndServe(":8088", nil))
 }
